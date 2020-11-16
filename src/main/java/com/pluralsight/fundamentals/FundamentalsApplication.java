@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class FundamentalsApplication {
 
+//	H2 Database
 	private static final Logger log = LoggerFactory.getLogger((FundamentalsApplication.class));
 
 	public static void main(String[] args) {
@@ -19,6 +20,7 @@ public class FundamentalsApplication {
 		System.out.println("Hello everyone!");
 	}
 
+//	H2 Database
 	@Bean
 	public CommandLineRunner demo(ApplicationRepository repository) {
 		return args -> {
