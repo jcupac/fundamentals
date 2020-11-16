@@ -41,6 +41,11 @@ public class HomeController {
     }
 
 
+//    @RequestMapping("/")
+//    public String home () {
+//        return "index";
+//    }
+
 
 
 //    // create. resources > templates > form.html
