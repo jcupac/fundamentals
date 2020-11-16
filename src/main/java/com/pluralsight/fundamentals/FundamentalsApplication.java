@@ -30,7 +30,8 @@ public class FundamentalsApplication {
 			repository.save(new Application("App2", "j.cupac", "another description"));
 			repository.save(new Application("App3", "anna.vo", "about this app"));
 
-//			repository.save(new Ticket(""))
+//			Required type: application / release. provided; int
+//			repository.save(new Ticket("title", "description", 1, 1, "status"));
 
 			for (Application application : repository.findAll()) {
 				log.info("The app is: " + application.toString());

@@ -57,6 +57,11 @@
 
 	<build>
 		<plugins>
+			<!-- Spring Boot Maven plugin
+			1. repackages .jar and .war files to be executable
+			2. runs Spring Boot application
+			3. provides built-in dependency resolver
+			4. manages lifecycle of Spring Boot app -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
