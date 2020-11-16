@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.io.Console;
 import java.util.List;
 
 @RestController
@@ -52,7 +53,8 @@ public class TzaController {
         try {
             return new ResponseEntity<Application>(applicationService.findApplication(id), HttpStatus.OK);
         } catch (ApplicationNotFoundException exception) {
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Application Not Found");
+            throw new ResponseStatusException(
+                    HttpStatus.NOT_FOUND, "Application Not Found");
         }
     }
 
