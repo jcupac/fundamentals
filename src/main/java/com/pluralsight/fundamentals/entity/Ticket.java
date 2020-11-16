@@ -11,9 +11,6 @@ public class Ticket {
     private String title;
     private String description;
 
-    public Ticket() {
-    }
-
     @ManyToOne
     @JoinColumn(name = "application_id")
     private Application application;
@@ -26,6 +23,9 @@ public class Ticket {
 
     private String status;
 
+    public Ticket() {
+    }
+
     public Ticket(String title, String description,
                   Application application, Release release,
                   String status) {
@@ -36,9 +36,7 @@ public class Ticket {
         this.status = status;
     }
 
-    public Integer getId() {
-        return id;
-    }
+    public Integer getId() { return id; }
 
     public void setId(Integer id) {
         this.id = id;
