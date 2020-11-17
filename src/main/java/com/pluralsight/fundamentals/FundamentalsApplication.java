@@ -14,6 +14,7 @@ import org.springframework.context.annotation.Bean;
 public class FundamentalsApplication {
 
 //	H2 Database
+//  not necessary if using Database Tool Window (IntelliJ Ultimate)
 	private static final Logger log = LoggerFactory.getLogger((FundamentalsApplication.class));
 
 	public static void main(String[] args) {
@@ -21,8 +22,9 @@ public class FundamentalsApplication {
 		System.out.println("Hello everyone!");
 	}
 
+//  H2 Database
+//  not necessary if using Database Tool Window (IntelliJ Ultimate)
 //  need to use this if there is no Database Tool Window to run .sql
-//	H2 Database
 	@Bean
 	public CommandLineRunner demo(ApplicationRepository repository) {
 		return args -> {
